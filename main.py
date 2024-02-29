@@ -113,6 +113,9 @@ def softmax(Z):
         np.exp(Z) it just applies "e" to the "Z" to every single value of Z 
 
         sum is going to sum up through each value of Z substituted in e^Z[j]
+
+        the point of this is to get values based on mutually exclusive probabilities,
+        this is, getting values between 0 and 1, that summed up we get the value of 1 
     """
     return np.exp(Z) / sum(np.exp(Z))
     
